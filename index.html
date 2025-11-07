@@ -77,6 +77,37 @@
                 margin: 4px 4px;
             }
 
+            blockquote {
+                background-color: #eceff4;
+                border-left: 4px solid #5e81ac;
+                padding: 1rem 1.5rem;
+                margin: 1.5rem 0;
+                font-style: italic;
+                color: #3b4252;
+            }
+
+            .marquee-container {
+                overflow: hidden;
+                white-space: nowrap;
+                width: 100%;
+            }
+            .marquee {
+                display: inline-block;
+                animation: marquee 15s linear infinite;
+            }
+            .marquee span {
+                display: inline-block;
+                padding: 0 50vw;
+            }
+            @keyframes marquee {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+
             @media (max-width: 768px) {
                 .projects,
                 .stack {
@@ -102,6 +133,12 @@
         </style>
     </head>
     <body class="flex center y">
+        <div class="marquee-container">
+            <div class="marquee">
+                <span>*| for hire |*</span>
+                <span>*| for hire |*</span>
+            </div>
+        </div>
         <div class="hero flex center">
             <h1>hallo.</h1>
             <p>i'm aayush.</p>
@@ -133,6 +170,14 @@
                 >]
             </p>
             <blockquote>playing my part</blockquote>
+            <p>
+                [<a
+                    href="https://drive.google.com/file/d/1rK8kyMgxFxFHCUj4yrzs3CvAa1M_kGfh/view?usp=sharing"
+                    target="_blank"
+                    style="color: #a3be8c"
+                    >Resume</a
+                >]
+            </p>
         </div>
 
         <div class="projects" id="projects">
