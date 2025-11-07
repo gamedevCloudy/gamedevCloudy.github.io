@@ -1,27 +1,243 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-  body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    color: #212121; 
-    background-color: #fafafa;
-    font-family: monospace;
-  }
-  </style>
-</head>
-<body>
-  <p>
-    this site is about to be handmade. 
-    <br>
-    you can find the archive  
-    <a href="https://web.archive.org/web/20250729030055/https://aayushakacloudy.is-a.dev/">here.</a>
-  <p>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>aayush's portfolio</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                height: auto;
+                color: #3b4252;
+                background-color: #e5e9f0;
+                font-family: monospace;
+                flex-direction: column;
+            }
+
+            footer {
+                position: fixed;
+                bottom: 0;
+                padding: 1.5rem 1.5rem;
+                margin: 0 4px;
+                background-color: #3b4252;
+                color: #e5e9f0;
+                width: 100%;
+
+            }
+            a {
+                /*color: #8fbcbb*/
+                color: #5e81ac
+            }
+            .hero {
+                height: 100vh;
+                /*margin: 40% 10%;*/
+                padding: 5vh 0 0 0;
+                flex-direction: column;
+            }
+            .flex {
+                display:  flex;
+            }
+            .center {
+                align-items: center;
+                justify-content: center;
+            }
+            .spread {
+                align-items: stretch;
+                justify-content: space-around;
+            }
+            .y {
+                flex-direction: column;
+            }
+
+            .projects > div > div, .stack > div > div {
+                border: 2px solid #3b4252;
+                margin: 2rem 2rem;
+                padding: 2rem 2rem;
+                flex: 1;
+            }
+            .projects {
+                margin: 0 10% 4rem;
+            }
+            .stack {
+                margin: 0 10% 4rem;
+            }
+
+            .tags > div {
+                border-radius: 12px;
+                background-color: #a3be8c55;
+                border: 2px solid #a3be8c;
+                color: #a3be8c;
+                padding: 4px 4px;
+                margin: 4px 4px;
+
+            }
+
+            @media (max-width: 768px) {
+                .projects, .stack {
+                    margin: 0 1rem 2rem;
+                }
+
+                .projects > div, .stack > div {
+                    flex-direction: column;
+                }
+
+                .projects > div > div, .stack > div > div {
+                    margin: 1rem 0;
+                    padding: 1rem;
+                }
+
+                .tags {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+
+        </style>
+    </head>
+    <body class="flex center y">
+        <div class="hero flex center">
+
+        <h1>hallo.</h1>
+        <p>i'm aayush.</p>
+        <br />
+        <p>ai engineer | research | systems</p>
+        <br />
+        <ul>
+            <li>
+                <a href="#projects"> projects </a>
+            </li>
+            <li>
+                <a href="#stack"> stack </a>
+            </li>
+
+        </ul>
+
+        <p>
+            [<a target="_blank" href=https://github.com/gamedevCloudy">Github</a>]|
+            [<a target="_blank" href=https://www.linkedin.com/in/aayush-chaudhary-2b7b99208/"
+                >LinkedIn</a
+            >]|[<a target="_blank" href=https://leetcode.com/cloudyMakesGames">Leetcode</a>] |
+            [<a target="_blank" href=https://cloudyin.itch.io">itch.io</a>]
+        </p>
+        <blockquote>playing my part</blockquote>
+        </div>
+
+        <div class="projects" id="projects">
+            <h3>
+                projects
+            </h3>
+            <div class="flex spread">
+                <div>
+                    <b>RTX-Zig: High-Performance Ray Tracer</b>
+                    <p>
+                        CPU-based ray tracer in Zig implementing multi-material rendering, anti-aliasing and depth of field with SIMD optimizations.
+                        Features advanced Zig language patterns including comptime, tagged unions, and vector operations.
+                    </p>
+                    <div class="flex spread tags">
+                        <div>Zig</div>
+                        <div>Ray Tracing</div>
+                        <div>SIMD</div>
+                        <div>Computer Graphics</div>
+                    </div>
+                    <a href="https://github.com/gamedevCloudy/rtx-zig" target="_blank">
+                        View Project →
+                    </a>
+                </div>
+                <div>
+                    <b>Transformer Attention Visualizer</b>
+                    <p>
+                        Research tool for analyzing transformer attention patterns in DistilBERT.
+                        Implements efficient inference caching and interactive visualization to facilitate
+                        mechanistic interpretability research of attention heads and layer behaviors.
+                    </p>
+                    <div class="flex spread tags">
+                        <div>Interpretability</div>
+                        <div>Attention</div>
+                        <div>Transformers</div>
+                        <div>PyTorch</div>
+                    </div>
+                    <a href="https://github.com/yourusername/attention-visualization" target="_blank">
+                        View Research Tool →
+                    </a>
+                </div>
+                <div>
+                    <b>LangGraph Multi-Agent Travel System</b>
+                    <p>
+                        Production-grade multi-agent system using LangGraph to orchestrate 10+ specialized LLM agents for automated travel presentation generation.
+                        Implements advanced workflow orchestration with quality control, multi-LLM routing, and intelligent task delegation.
+                    </p>
+                    <div class="flex center tags">
+                        <div>langGraph</div>
+                        <div>multi agent systems</div>
+                        <div>LLM Orchestration</div>
+                        <div>GenAI</div>
+                        <div>FastAPI</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="stack" id="stack">
+            <h3>Tech Stack</h3>
+            <div class="flex spread">
+                <div>
+                    <p><b>AI Engineering & GenAI</b></p>
+                    <ul>
+                        <li>LangGraph & Multi-Agent Systems</li>
+                        <li>OpenAI GPT, Google Vertex AI</li>
+                        <li>HuggingFace, OpenAI API </li>
+                        <li>LangChain, Chroma, LLama Index, FAISS</li>
+                        <li>FastAPI,Pydantic</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p><b>Deep Learning / ML / Data Science</b></p>
+                    <ul>
+                        <li>PyTorch, Transformers</li>
+                        <li>NumPy, Pandas, Matplotlib</li>
+                        <li>Scikit-Learn, Seaborn</li>
+                        <li>Neural Networks</li>
+                        <li>Model Interpretability & Attention Mechanisms</li>
+                    </ul>
+                </div>
+
+
+
+                <div>
+                    <p><b>Backend Development/ web</b></p>
+                    <ul>
+                        <li>Flask, FastAPI</li>
+                        <li>HTML/CSS/JavaScript</li>
+                        <li>htmx, reactjs, nextjs</li>
+                        <li>cloudflare, tursodb, PostGREs</li>
+                        <li>REST APIs</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p><b>DevOps & Infrastructure</b></p>
+                    <ul>
+                        <li>Docker, Google Cloud Run</li>
+                        <li>PostgreSQL, Redis</li>
+                        <li>Cloud Platforms, Self-Hosting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+
+    <footer class="flex center">
+        contact: <a href="mailto:aaayush.dev@gmail.com">[email]</a>
+    </footer>
+    <script src="script.js"></script>
 </html>
