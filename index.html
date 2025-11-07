@@ -28,11 +28,10 @@
                 background-color: #3b4252;
                 color: #e5e9f0;
                 width: 100%;
-
             }
             a {
                 /*color: #8fbcbb*/
-                color: #5e81ac
+                color: #5e81ac;
             }
             .hero {
                 height: 100vh;
@@ -41,7 +40,7 @@
                 flex-direction: column;
             }
             .flex {
-                display:  flex;
+                display: flex;
             }
             .center {
                 align-items: center;
@@ -55,7 +54,8 @@
                 flex-direction: column;
             }
 
-            .projects > div > div, .stack > div > div {
+            .projects > div > div,
+            .stack > div > div {
                 border: 2px solid #3b4252;
                 margin: 2rem 2rem;
                 padding: 2rem 2rem;
@@ -75,19 +75,21 @@
                 color: #a3be8c;
                 padding: 4px 4px;
                 margin: 4px 4px;
-
             }
 
             @media (max-width: 768px) {
-                .projects, .stack {
+                .projects,
+                .stack {
                     margin: 0 1rem 2rem;
                 }
 
-                .projects > div, .stack > div {
+                .projects > div,
+                .stack > div {
                     flex-direction: column;
                 }
 
-                .projects > div > div, .stack > div > div {
+                .projects > div > div,
+                .stack > div > div {
                     margin: 1rem 0;
                     padding: 1rem;
                 }
@@ -97,47 +99,53 @@
                     justify-content: center;
                 }
             }
-
         </style>
     </head>
     <body class="flex center y">
         <div class="hero flex center">
+            <h1>hallo.</h1>
+            <p>i'm aayush.</p>
+            <br />
+            <p>ai engineer | research | systems</p>
+            <br />
+            <ul>
+                <li>
+                    <a href="#projects"> projects </a>
+                </li>
+                <li>
+                    <a href="#stack"> stack </a>
+                </li>
+            </ul>
 
-        <h1>hallo.</h1>
-        <p>i'm aayush.</p>
-        <br />
-        <p>ai engineer | research | systems</p>
-        <br />
-        <ul>
-            <li>
-                <a href="#projects"> projects </a>
-            </li>
-            <li>
-                <a href="#stack"> stack </a>
-            </li>
-
-        </ul>
-
-        <p>
-            [<a target="_blank" href=https://github.com/gamedevCloudy">Github</a>]|
-            [<a target="_blank" href=https://www.linkedin.com/in/aayush-chaudhary-2b7b99208/"
-                >LinkedIn</a
-            >]|[<a target="_blank" href=https://leetcode.com/cloudyMakesGames">Leetcode</a>] |
-            [<a target="_blank" href=https://cloudyin.itch.io">itch.io</a>]
-        </p>
-        <blockquote>playing my part</blockquote>
+            <p>
+                [<a target="_blank" href="https://github.com/gamedevCloudy"
+                    >Github</a
+                >]| [<a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/aayush-chaudhary-2b7b99208/"
+                    >LinkedIn</a
+                >]|[<a
+                    target="_blank"
+                    href="https://leetcode.com/cloudyMakesGames"
+                    >Leetcode</a
+                >] | [<a target="_blank" href="https://cloudyin.itch.io"
+                    >itch.io</a
+                >]
+            </p>
+            <blockquote>playing my part</blockquote>
         </div>
 
         <div class="projects" id="projects">
-            <h3>
-                projects
-            </h3>
+            <h3>projects</h3>
             <div class="flex spread">
                 <div>
                     <b>RTX-Zig: High-Performance Ray Tracer</b>
                     <p>
-                        CPU-based ray tracer in Zig implementing multi-material rendering, anti-aliasing and depth of field with SIMD optimizations.
-                        Features advanced Zig language patterns including comptime, tagged unions, and vector operations.
+                        CPU-based ray tracer in Zig implementing multi-material
+                        rendering, anti-aliasing and depth of field with SIMD
+                        optimizations. Features advanced Zig language patterns
+                        including comptime, tagged unions, and vector
+                        operations.
                     </p>
                     <div class="flex spread tags">
                         <div>Zig</div>
@@ -145,16 +153,21 @@
                         <div>SIMD</div>
                         <div>Computer Graphics</div>
                     </div>
-                    <a href="https://github.com/gamedevCloudy/rtx-zig" target="_blank">
+                    <a
+                        href="https://github.com/gamedevCloudy/rtx-zig"
+                        target="_blank"
+                    >
                         View Project →
                     </a>
                 </div>
                 <div>
                     <b>Transformer Attention Visualizer</b>
                     <p>
-                        Research tool for analyzing transformer attention patterns in DistilBERT.
-                        Implements efficient inference caching and interactive visualization to facilitate
-                        mechanistic interpretability research of attention heads and layer behaviors.
+                        Research tool for analyzing transformer attention
+                        patterns in DistilBERT. Implements efficient inference
+                        caching and interactive visualization to facilitate
+                        mechanistic interpretability research of attention heads
+                        and layer behaviors.
                     </p>
                     <div class="flex spread tags">
                         <div>Interpretability</div>
@@ -162,15 +175,21 @@
                         <div>Transformers</div>
                         <div>PyTorch</div>
                     </div>
-                    <a href="https://github.com/yourusername/attention-visualization" target="_blank">
+                    <a
+                        href="https://github.com/yourusername/attention-visualization"
+                        target="_blank"
+                    >
                         View Research Tool →
                     </a>
                 </div>
                 <div>
                     <b>LangGraph Multi-Agent Travel System</b>
                     <p>
-                        Production-grade multi-agent system using LangGraph to orchestrate 10+ specialized LLM agents for automated travel presentation generation.
-                        Implements advanced workflow orchestration with quality control, multi-LLM routing, and intelligent task delegation.
+                        Production-grade multi-agent system using LangGraph to
+                        orchestrate 10+ specialized LLM agents for automated
+                        travel presentation generation. Implements advanced
+                        workflow orchestration with quality control, multi-LLM
+                        routing, and intelligent task delegation.
                     </p>
                     <div class="flex center tags">
                         <div>langGraph</div>
@@ -179,7 +198,6 @@
                         <div>GenAI</div>
                         <div>FastAPI</div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -192,7 +210,7 @@
                     <ul>
                         <li>LangGraph & Multi-Agent Systems</li>
                         <li>OpenAI GPT, Google Vertex AI</li>
-                        <li>HuggingFace, OpenAI API </li>
+                        <li>HuggingFace, OpenAI API</li>
                         <li>LangChain, Chroma, LLama Index, FAISS</li>
                         <li>FastAPI,Pydantic</li>
                     </ul>
@@ -209,8 +227,6 @@
                     </ul>
                 </div>
 
-
-
                 <div>
                     <p><b>Backend Development/ web</b></p>
                     <ul>
@@ -225,14 +241,14 @@
                     <p><b>DevOps & Infrastructure</b></p>
                     <ul>
                         <li>Docker, Google Cloud Run</li>
-                        <li>PostgreSQL, Redis, Valkey, SQLite, libsql, Turso</li>
+                        <li>
+                            PostgreSQL, Redis, Valkey, SQLite, libsql, Turso
+                        </li>
                         <li>Cloud Platforms, Self-Hosting</li>
                     </ul>
                 </div>
             </div>
         </div>
-
-
     </body>
 
     <footer class="flex center">
