@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="manifest" href="/manifest.json">
-        <meta name="theme-color" content="#000000">
+        <meta name="theme-color" content="#1e1e2e">
         <link rel="icon" href="https://raw.githubusercontent.com/gamedevCloudy/gamedevCloudy.github.io/main/favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css2?family=Akshar&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
         <title>aayush's portfolio</title>
@@ -18,14 +18,14 @@
                 justify-content: center;
                 min-height: 100vh;
                 height: auto;
-                color: #3b4252;
-                background-color: #e5e9f0;
-                font-family: 'Montserrat', 'Akshar', monospace, sans-serif;
+                color: #cdd6f4;
+                background-color: #1e1e2e;
+                font-family: 'Montserrat', monospace, sans-serif;
                 flex-direction: column;
             }
 
             [lang="hi"] {
-                font-family: 'Montserrat', 'Akshar', sans-serif;
+                font-family: 'Akshar', sans-serif;
             }
 
             footer {
@@ -33,17 +33,15 @@
                 bottom: 0;
                 padding: 1.5rem 1.5rem;
                 margin: 0 4px;
-                background-color: #3b4252;
-                color: #e5e9f0;
+                background-color: #181825;
+                color: #cdd6f4;
                 width: 100%;
             }
             a {
-                /*color: #8fbcbb*/
-                color: #5e81ac;
+                color: #89b4fa;
             }
             .hero {
                 height: 100vh;
-                /*margin: 40% 10%;*/
                 padding: 5vh 0 0 0;
                 flex-direction: column;
             }
@@ -65,7 +63,7 @@
 
             .projects > div > div,
             .stack > div > div {
-                border: 2px solid #3b4252;
+                border: 2px solid #313244;
                 margin: 2rem 2rem;
                 padding: 2rem 2rem;
                 flex: 1;
@@ -93,9 +91,9 @@
 
             .tags > div {
                 border-radius: 20px;
-                background-color: #a3be8c55;
-                border: 2px solid #a3be8c;
-                color: #a3be8c;
+                background-color: #a6e3a133;
+                border: 2px solid #a6e3a1;
+                color: #a6e3a1;
                 padding: 6px 14px;
                 margin: 0;
                 white-space: nowrap;
@@ -103,12 +101,12 @@
             }
 
             blockquote {
-                background-color: #eceff4;
-                border-left: 4px solid #5e81ac;
+                background-color: #313244;
+                border-left: 4px solid #89b4fa;
                 padding: 1rem 1.5rem;
                 margin: 1.5rem 0;
                 font-style: italic;
-                color: #3b4252;
+                color: #cdd6f4;
             }
 
             .marquee-container {
@@ -131,6 +129,26 @@
                 100% {
                     transform: translateX(-50%);
                 }
+            }
+
+            ::-webkit-scrollbar {
+                width: 12px;
+            }
+            ::-webkit-scrollbar-track {
+                background: #181825;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: #45475a;
+                border-radius: 6px;
+                border: 3px solid #181825;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: #585b70;
+            }
+
+            * {
+                scrollbar-width: thin;
+                scrollbar-color: #45475a #181825;
             }
 
             @media (max-width: 768px) {
@@ -164,165 +182,20 @@
                 <span>*| for hire |*</span>
             </div>
         </div>
-        <div class="hero flex center">
-            <h1>hallo.</h1>
-            <p>i'm aayush.</p>
-            <br />
-            <p>ai engineer | research | systems</p>
-            <br />
-            <ul>
-                <li>
-                    <a href="#projects"> projects </a>
-                </li>
-                <li>
-                    <a href="#stack"> stack </a>
-                </li>
-            </ul>
-
-            <p>
-                [<a target="_blank" href="https://github.com/gamedevCloudy"
-                    >Github</a
-                >]| [<a
-                    target="_blank"
-                    href="https://www.linkedin.com/in/aayush-chaudhary-2b7b99208/"
-                    >LinkedIn</a
-                >]|[<a
-                    target="_blank"
-                    href="https://leetcode.com/cloudyMakesGames"
-                    >Leetcode</a
-                >] | [<a target="_blank" href="https://cloudyin.itch.io"
-                    >itch.io</a
-                >]
-            </p>
-            <blockquote>playing my part</blockquote>
-            <p>
-                [<a
-                    href="https://drive.google.com/file/d/1rK8kyMgxFxFHCUj4yrzs3CvAa1M_kGfh/view?usp=sharing"
-                    target="_blank"
-                    style="color: #a3be8c"
-                    >Resume</a
-                >]
-            </p>
-        </div>
+        <div class="hero flex center"></div>
 
         <div class="projects" id="projects">
             <h3>projects</h3>
-            <div class="flex spread">
-                <div>
-                    <b>RTX-Zig: High-Performance Ray Tracer</b>
-                    <p>
-                        CPU-based ray tracer in Zig implementing multi-material
-                        rendering, anti-aliasing and depth of field with SIMD
-                        optimizations. Features advanced Zig language patterns
-                        including comptime, tagged unions, and vector
-                        operations.
-                    </p>
-                    <div class="flex tags">
-                        <div>Zig</div>
-                        <div>Ray Tracing</div>
-                        <div>SIMD</div>
-                        <div>Computer Graphics</div>
-                    </div>
-                    <a
-                        href="https://github.com/gamedevCloudy/rtx-zig"
-                        target="_blank"
-                    >
-                        View Project →
-                    </a>
-                </div>
-                <div>
-                    <b>Transformer Attention Visualizer</b>
-                    <p>
-                        Research tool for analyzing transformer attention
-                        patterns in DistilBERT. Implements efficient inference
-                        caching and interactive visualization to facilitate
-                        mechanistic interpretability research of attention heads
-                        and layer behaviors.
-                    </p>
-                    <div class="flex tags">
-                        <div>Interpretability</div>
-                        <div>Attention</div>
-                        <div>Transformers</div>
-                        <div>PyTorch</div>
-                    </div>
-                    <a
-                        href="https://github.com/gamedevCloudy/attention-visualization"
-                        target="_blank"
-                    >
-                        View Research Tool →
-                    </a>
-                </div>
-                <div>
-                    <b>LangGraph Multi-Agent Travel System</b>
-                    <p>
-                        Production-grade multi-agent system using LangGraph to
-                        orchestrate 10+ specialized LLM agents for automated
-                        travel presentation generation. Implements advanced
-                        workflow orchestration with quality control, multi-LLM
-                        routing, and intelligent task delegation.
-                    </p>
-                    <div class="flex tags">
-                        <div>langGraph</div>
-                        <div>multi agent systems</div>
-                        <div>LLM Orchestration</div>
-                        <div>GenAI</div>
-                        <div>FastAPI</div>
-                    </div>
-                </div>
-            </div>
+            <div class="flex spread"></div>
         </div>
 
         <div class="stack" id="stack">
             <h3>Tech Stack</h3>
-            <div class="flex spread">
-                <div>
-                    <p><b>AI Engineering & GenAI</b></p>
-                    <ul>
-                        <li>LangGraph & Multi-Agent Systems</li>
-                        <li>OpenAI GPT, Google Vertex AI</li>
-                        <li>HuggingFace, OpenAI API</li>
-                        <li>LangChain, Chroma, LLama Index, FAISS</li>
-                        <li>FastAPI,Pydantic</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <p><b>Deep Learning / ML / Data Science</b></p>
-                    <ul>
-                        <li>PyTorch, Transformers</li>
-                        <li>NumPy, Pandas, Matplotlib</li>
-                        <li>Scikit-Learn, Seaborn</li>
-                        <li>Neural Networks</li>
-                        <li>Model Interpretability & Attention Mechanisms</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <p><b>Backend Development/ web</b></p>
-                    <ul>
-                        <li>Flask, FastAPI</li>
-                        <li>HTML/CSS/JavaScript</li>
-                        <li>htmx, reactjs, nextjs</li>
-                        <li>REST APIs</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <p><b>DevOps & Infrastructure</b></p>
-                    <ul>
-                        <li>Docker, Google Cloud Run</li>
-                        <li>
-                            PostgreSQL, Redis, Valkey, SQLite, libsql, Turso
-                        </li>
-                        <li>Cloud Platforms, Self-Hosting</li>
-                    </ul>
-                </div>
-            </div>
+            <div class="flex spread"></div>
         </div>
     </body>
 
-    <footer class="flex center">
-        contact: <a href="mailto:aaayush.dev@gmail.com">[email]</a>
-    </footer>
+    <footer class="flex center"></footer>
+    <script src="data-loader.js"></script>
     <script src="script.js"></script>
 </html>

@@ -1,0 +1,19 @@
+{
+  "greeting": "hallo.",
+  "greetingHi": "प्रणाम!",
+  "name": "aayush",
+  "title": "ai engineer | research | systems",
+  "navLinks": [
+    { "label": "projects", "href": "#projects" },
+    { "label": "stack", "href": "#stack" }
+  ],
+  "socialLinks": [
+    { "label": "Github", "url": "https://github.com/gamedevCloudy" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/aayush-chaudhary-2b7b99208/" },
+    { "label": "Leetcode", "url": "https://leetcode.com/cloudyMakesGames" },
+    { "label": "itch.io", "url": "https://cloudyin.itch.io" }
+  ],
+  "quote": "playing my part",
+  "resumeUrl": "https://drive.google.com/file/d/1rK8kyMgxFxFHCUj4yrzs3CvAa1M_kGfh/view?usp=sharing",
+  "contactEmail": "aaayush.dev@gmail.com"
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "category": "AI Engineering & GenAI",
+    "items": [
+      "LangGraph & Multi-Agent Systems",
+      "OpenAI GPT, Google Vertex AI",
+      "HuggingFace, OpenAI API",
+      "LangChain, Chroma, LLama Index, FAISS",
+      "FastAPI, Pydantic"
+    ]
+  },
+  {
+    "category": "Deep Learning / ML / Data Science",
+    "items": [
+      "PyTorch, Transformers",
+      "NumPy, Pandas, Matplotlib",
+      "Scikit-Learn, Seaborn",
+      "Neural Networks",
+      "Model Interpretability & Attention Mechanisms"
+    ]
+  },
+  {
+    "category": "Backend Development / Web",
+    "items": [
+      "Flask, FastAPI",
+      "HTML/CSS/JavaScript",
+      "htmx, reactjs, nextjs",
+      "REST APIs"
+    ]
+  },
+  {
+    "category": "DevOps & Infrastructure",
+    "items": [
+      "Docker, Google Cloud Run",
+      "PostgreSQL, Redis, Valkey, SQLite, libsql, Turso",
+      "Cloud Platforms, Self-Hosting"
+    ]
+  }
+]

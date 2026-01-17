@@ -1,19 +1,22 @@
 function typewriterAnimation() {
   const h1 = document.querySelector("h1");
+  if (!h1) {
+    setTimeout(typewriterAnimation, 100);
+    return;
+  }
   const text1 = "hallo.";
-  // const text2 = "pranam.";
   const text2 = "प्रणाम!";
-  const typeSpeed = 100; // milliseconds per character
-  const eraseSpeed = 50; // milliseconds per character when erasing
-  const pauseBeforeErase = 1000; // pause after typing before erasing
-  const pauseBeforeType2 = 500; // pause after erasing before typing second text
+  const typeSpeed = 100;
+  const eraseSpeed = 50;
+  const pauseBeforeErase = 1000;
+  const pauseBeforeType2 = 500;
 
   let charIndex = 0;
 
-  // Type first text
   function typeText1() {
     if (charIndex < text1.length) {
       h1.textContent += text1.charAt(charIndex);
+      h1.setAttribute("lang", "en");
       charIndex++;
       setTimeout(typeText1, typeSpeed);
     } else {
@@ -21,7 +24,6 @@ function typewriterAnimation() {
     }
   }
 
-  // Erase text
   function eraseText() {
     if (h1.textContent.length > 0) {
       h1.textContent = h1.textContent.slice(0, -1);
@@ -32,19 +34,19 @@ function typewriterAnimation() {
     }
   }
 
-  // Type second text
   function typeText2() {
     if (charIndex < text2.length) {
       h1.textContent += text2.charAt(charIndex);
+      h1.setAttribute("lang", "hi");
       charIndex++;
       setTimeout(typeText2, typeSpeed);
     }
   }
 
-  // Start animation
   h1.textContent = "";
   typeText1();
 }
 
-// Call the function when DOM is ready
-typewriterAnimation();
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(typewriterAnimation, 200);
+});

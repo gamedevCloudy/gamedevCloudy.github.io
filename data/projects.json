@@ -1,0 +1,23 @@
+[
+  {
+    "title": "RTX-Zig: High-Performance Ray Tracer",
+    "description": "CPU-based ray tracer in Zig implementing multi-material rendering, anti-aliasing and depth of field with SIMD optimizations. Features advanced Zig language patterns including comptime, tagged unions, and vector operations.",
+    "tags": ["Zig", "Ray Tracing", "SIMD", "Computer Graphics"],
+    "url": "https://github.com/gamedevCloudy/rtx-zig",
+    "linkText": "View Project →"
+  },
+  {
+    "title": "Transformer Attention Visualizer",
+    "description": "Research tool for analyzing transformer attention patterns in DistilBERT. Implements efficient inference caching and interactive visualization to facilitate mechanistic interpretability research of attention heads and layer behaviors.",
+    "tags": ["Interpretability", "Attention", "Transformers", "PyTorch"],
+    "url": "https://github.com/gamedevCloudy/attention-visualization",
+    "linkText": "View Research Tool →"
+  },
+  {
+    "title": "LangGraph Multi-Agent Travel System",
+    "description": "Production-grade multi-agent system using LangGraph to orchestrate 10+ specialized LLM agents for automated travel presentation generation. Implements advanced workflow orchestration with quality control, multi-LLM routing, and intelligent task delegation.",
+    "tags": ["langGraph", "multi agent systems", "LLM Orchestration", "GenAI", "FastAPI"],
+    "url": "",
+    "linkText": ""
+  }
+]
